@@ -1,16 +1,16 @@
 function distanceFromHqInBlocks(end){
     if(end > 42) {
-      return end - 43 + 1;
+      return end - 42;
     } else {
-      return 43 - end - 1;
+      return 42 - end;
     }
 }
 
 function distanceFromHqInFeet(end){
   if(end > 42) {
-    return (end - 43 + 1) * 264;
+    return (end - 42) * 264;
   } else {
-    return (43 - end - 1) * 264;
+    return (42 - end) * 264;
   }
 };
 
