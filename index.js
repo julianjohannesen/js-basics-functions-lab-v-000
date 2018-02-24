@@ -7,11 +7,7 @@ function distanceFromHqInBlocks(end){
 }
 
 function distanceFromHqInFeet(end){
-  if(end > 42) {
-    return (end - 42) * 264;
-  } else {
-    return (42 - end) * 264;
-  }
+  return distanceFromHqInBlocks(end) * 264;
 };
 
 function distanceTravelledInFeet(begin, end){
@@ -19,4 +15,7 @@ function distanceTravelledInFeet(begin, end){
 };
 
 function calculatesFarePrice(begin, end){
+  if (Math.abs(begin - end) === 1){
+    
+  }
 };
